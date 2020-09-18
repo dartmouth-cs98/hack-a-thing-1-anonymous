@@ -10,7 +10,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        
+        ZStack {
+            BkgdImage()
+            VStack {
+                Text("Welcome to Anonymous")
+                    .font(.title)
+                    .fontWeight(.heavy)
+                    .foregroundColor(.blue)
+                    .multilineTextAlignment(.center)
+                HStack {
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                        Text("Write")
+                            .foregroundColor(Color(red: 0.3, green: 0.2, blue: 0.8, opacity: 1.0))
+                    }
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                        Text("Read")
+                            .foregroundColor(Color(red: 0.3, green: 0.2, blue: 0.8, opacity: 1.0))
+                    }
+                }
+            }
+            .padding()
+        }
     }
 }
 
