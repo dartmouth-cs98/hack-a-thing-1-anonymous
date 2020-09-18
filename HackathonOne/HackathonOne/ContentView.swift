@@ -20,6 +20,7 @@ struct ContentView: View {
             ZStack {
                 
                 BkgdImage()
+                    .offset(y: -58)
                 VStack {
                     NavigationLink(destination: WriteView(), isActive: $goToWriteView) { EmptyView() }
                     NavigationLink(destination: ReadView(), isActive: $goToReadView) { EmptyView() }
