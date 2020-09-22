@@ -25,10 +25,14 @@ struct WriteView: View {
         NavigationView {
             
             VStack(alignment: .leading) {
-                NavigationLink(destination: ReadView(), isActive: $goToReadView) { EmptyView() }
+                
+                NavigationLink(destination: ReadView(), isActive: $goToReadView) { EmptyView()}
                 
                 TextField("Write an anonymous post...", text: self.$post)
+                    .foregroundColor(.green)
                 Text("You wrote: \(post)")
+                    .fontWeight(.heavy)
+                    .foregroundColor(.green)
                 Button(action: {
                     self.goToReadView = true
                     listItems.append(Item(name:self.post))
@@ -38,10 +42,14 @@ struct WriteView: View {
                     self.post = ""
                 }) {
                     Text("Submit")
-                        .foregroundColor(Color(red: 0.3, green: 0.2, blue: 0.8, opacity: 1.0))
+                        .foregroundColor(.green)
                 }
+                
+                
             }.padding()
         }
+        
+        
     }
 }
 

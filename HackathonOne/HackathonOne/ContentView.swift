@@ -28,16 +28,18 @@ struct ContentView: View {
                     Text("Welcome to Anonymous")
                         .font(.title)
                         .fontWeight(.heavy)
-                        .foregroundColor(.blue)
+                        .foregroundColor(.green)
                         .multilineTextAlignment(.center)
                     HStack {
                         Button(action: {self.goToWriteView = true}) {
                             Text("Write")
-                                .foregroundColor(Color(red: 0.3, green: 0.2, blue: 0.8, opacity: 1.0))
+                                .fontWeight(.bold)
+                                .foregroundColor(.green)
                         }
                         Button(action: {self.goToReadView = true}) {
                             Text("Read")
-                                .foregroundColor(Color(red: 0.3, green: 0.2, blue: 0.8, opacity: 1.0))
+                                .fontWeight(.bold)
+                                .foregroundColor(.green)
                         }
                     }
                 }
