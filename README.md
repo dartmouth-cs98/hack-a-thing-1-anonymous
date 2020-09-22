@@ -7,6 +7,7 @@ We've made a simple version of apps like YikYak and Librex. The goal is to be ab
 
 ### Who did what
 Grant - Initial app skeleton from XCode, ReadMe
+\n
 Eileen - HomeScreen UI, Movement between Views, and WriteView and ReadView
 
 ### What we learned
