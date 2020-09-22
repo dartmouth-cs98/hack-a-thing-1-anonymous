@@ -7,17 +7,10 @@
 //
 
 import SwiftUI
-//import UIKit
 
 struct Item: Hashable {
     let name: String
 }
-
-//class PostClass: ObservableObject {
-//    @Published var postList = [String]()
-//}
-
-//var postList = [String]()
 
 var listItems = [Item]()
 
@@ -25,10 +18,6 @@ struct WriteView: View {
     @State var post: String = ""
     @State var goToReadView = false
     @State var addItem = false
-    
-//    @State var listItems = [Item]()
-//    @State var addItemName: String = ""
-//    var postList = ["First Post"]
     
         
     var body: some View {
@@ -42,13 +31,10 @@ struct WriteView: View {
                 Text("You wrote: \(post)")
                 Button(action: {
                     self.goToReadView = true
-//                    self.listItems.append(Item(name:self.post))
                     listItems.append(Item(name:self.post))
 
                     self.addItem.toggle()
-//                    let final = self.post
-//                    addPost(a: final)
-                    print(listItems)
+//                    print(listItems)
                     self.post = ""
                 }) {
                     Text("Submit")
@@ -57,11 +43,6 @@ struct WriteView: View {
             }.padding()
         }
     }
-    
-//    mutating func addPost(a: String) {
-////        @ObservedObject let obj: PostClass
-//        postList.append(a)
-//    }
 }
 
 struct WriteView_Previews: PreviewProvider {
