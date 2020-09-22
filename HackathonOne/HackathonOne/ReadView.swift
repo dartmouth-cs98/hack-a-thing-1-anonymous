@@ -9,12 +9,31 @@
 import SwiftUI
 
 struct ReadView: View {
+    
+//    let list = WriteView.postList
+    
     var body: some View {
-        VStack {
-            Text("Past Posts")
-            ScrollView {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
-            }
+        NavigationView {
+            List {
+                ForEach(listItems, id: \.self) { item in Text(item.name)}
+                }
+                .navigationBarTitle(Text("Past Posts"))
+            
+            
+            
+//                .navigationBarItems(trailing:
+//                                        Button(action: {
+//                                            self.addItem.toggle()
+//                                        }, label: {
+//                                            Image(systemName: "plus")
+//                                        })
+//                                )
+     
+//        VStack {
+//            Text("Past Posts")
+//            ForEach(WriteView.postList) {post in
+//                Text("Post: " \(post))
+//            }
         }
         
     }
