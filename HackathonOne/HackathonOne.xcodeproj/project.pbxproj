@@ -15,6 +15,8 @@
 		32CC2B172512F375002453B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC2B152512F375002453B6 /* LaunchScreen.storyboard */; };
 		32CC2B222512F375002453B6 /* HackathonOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CC2B212512F375002453B6 /* HackathonOneTests.swift */; };
 		F4C16CBE2514E8FD00D8E3ED /* BkgdImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C16CBD2514E8FD00D8E3ED /* BkgdImage.swift */; };
+		F4C16CC02514FADE00D8E3ED /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C16CBF2514FADE00D8E3ED /* WriteView.swift */; };
+		F4C16CC22514FB7500D8E3ED /* ReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C16CC12514FB7500D8E3ED /* ReadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		32CC2B212512F375002453B6 /* HackathonOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonOneTests.swift; sourceTree = "<group>"; };
 		32CC2B232512F375002453B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4C16CBD2514E8FD00D8E3ED /* BkgdImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BkgdImage.swift; sourceTree = "<group>"; };
+		F4C16CBF2514FADE00D8E3ED /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
+		F4C16CC12514FB7500D8E3ED /* ReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +87,10 @@
 			children = (
 				32CC2B0A2512F375002453B6 /* AppDelegate.swift */,
 				32CC2B0C2512F375002453B6 /* SceneDelegate.swift */,
-				32CC2B0E2512F375002453B6 /* ContentView.swift */,
 				F4C16CBD2514E8FD00D8E3ED /* BkgdImage.swift */,
+				32CC2B0E2512F375002453B6 /* ContentView.swift */,
+				F4C16CBF2514FADE00D8E3ED /* WriteView.swift */,
+				F4C16CC12514FB7500D8E3ED /* ReadView.swift */,
 				32CC2B102512F375002453B6 /* Assets.xcassets */,
 				32CC2B152512F375002453B6 /* LaunchScreen.storyboard */,
 				32CC2B182512F375002453B6 /* Info.plist */,
@@ -213,7 +219,9 @@
 			files = (
 				32CC2B0B2512F375002453B6 /* AppDelegate.swift in Sources */,
 				F4C16CBE2514E8FD00D8E3ED /* BkgdImage.swift in Sources */,
+				F4C16CC02514FADE00D8E3ED /* WriteView.swift in Sources */,
 				32CC2B0D2512F375002453B6 /* SceneDelegate.swift in Sources */,
+				F4C16CC22514FB7500D8E3ED /* ReadView.swift in Sources */,
 				32CC2B0F2512F375002453B6 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

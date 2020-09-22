@@ -7,18 +7,26 @@
 //
 
 import SwiftUI
+import UIKit
+
 
 struct WriteView: View {
+    @State var post: String = ""
+    @State var goToReadView = false
+        
     var body: some View {
         
-        VStack {
-            Text("Create New Post")
-            Form {
-                /*@START_MENU_TOKEN@*/ /*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
-            }
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text("Submit")
-            }
+        NavigationView {
+            VStack(alignment: .leading) {
+                NavigationLink(destination: ReadView(), isActive: $goToReadView) { EmptyView() }
+                
+                TextField("Write an anonymous post...", text: $post)
+                Text("You wrote: \(post)")
+                Button(action: {self.goToReadView = true}) {
+                    Text("Submit")
+                        .foregroundColor(Color(red: 0.3, green: 0.2, blue: 0.8, opacity: 1.0))
+                }
+            }.padding()
         }
     }
 }
