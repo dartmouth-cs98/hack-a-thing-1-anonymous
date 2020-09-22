@@ -18,4 +18,7 @@ This was both of our first times building an app and using Swift, so this was a 
 ### What didn't work
 I struggled a lot with finding a way to keep track of all previously written posts without using an external database. The solution I came up with involved a global variable list that upon pressing submit in the WriteView, would append the post to that list to be displayed in the ReadView. Further developments to work on would be integrating an external database to handle this because something I did not have time to work on was making sure that the previous posts weren't deleted when I exit out of the app.
  
+### Sources that inspired us
+https://developer.apple.com/tutorials/swiftui/creating-and-combining-views
 
+https://bryanmonsalvatge.com/posts/Adding-Items-To-a-List-In-SwiftUI/
