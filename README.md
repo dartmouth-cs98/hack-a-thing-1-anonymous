@@ -6,9 +6,8 @@
 We've made a simple version of apps like YikYak and Librex. The goal is to be able to write posts and read previously written posts, anonymously. The two main actions in our app are read and write; Write a post to submit, and Read all previously written posts.
 
 ### Who did what
-Grant - Initial app skeleton from XCode, ReadMe
-\n
-Eileen - HomeScreen UI, Movement between Views, and WriteView and ReadView
+*Grant - Initial app skeleton from XCode, ReadMe
+*Eileen - HomeScreen UI, Movement between Views, and WriteView and ReadView
 
 ### What we learned
 Both Eileen and I have never made an iOS application or coded using Swift,so this is also an introduction to the language and the X-code platform.
